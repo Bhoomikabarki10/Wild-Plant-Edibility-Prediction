@@ -1,38 +1,98 @@
 # Wild-Plant-Edibility-Prediction
 This project is a Flask-based web application that uses deep learning models (CNN and ResNet) to classify  plant images and predict whether they help cure diabetes. Users can upload images, select a model, and  receive predictions with accuracy details. It also includes authentication and simple navigation pages. 
 Plant-Leaf-Diabetes-Prediction-DeepLearning/
+
+
 │
+
+
 ├── app.py                     # Flask application
+
+
 ├── requirements.txt           # Python dependencies
+
+
 ├── README.md                  # Project documentation
+
+
 │
+
+
 ├── models/
+
+
 │   ├── cnnmodel.h5             # CNN trained model
+
+
 │   └── resnetplant.h5          # ResNet trained model
+
+
 │
 ├── uploads/                    # Uploaded images
+
+
 │
 ├── static/
+
+
 │   ├── css/
+
+
 │   │   └── style.css
+
+
 │
+
+
 ├── templates/
+
+
 │   ├── home.html
+
+
 │   ├── index.html
+
+
 │   ├── login.html
+
+
 │   ├── about.html
+
+
 │
+
+
 ├── dataset/
+
+
 │   └── README.md               # Dataset description
+
+
 │
 ├── screenshots/
+
+
 │   ├── home_page.png
+
+
 │   ├── upload_page.png
+
+
 │   └── result_page.png
+
+
 │
+
+
 └── report/
+
+
     └── Project_Report.docx
+
+    
 🧾 README.md (Copy–Paste This)
+
+
 markdown
 Copy code
 # 🌿 Plant Leaf Disease Cure Prediction Using Deep Learning
