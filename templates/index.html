@@ -1,0 +1,59 @@
+{% extends "base1.html" %} {% block content %}
+
+
+<div class="container " style="background-color:honeydew; padding:20px;">
+
+<h2>Image Classifier</h2>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        
+		<table class="table" >
+		<tr>
+		<td>
+		Choose model<br/>
+		<select name="model" >
+		<option value=1>CNN</option>
+		<option value=2>Resnet Model</option>
+		</select>
+		
+		</td>
+		
+		</tr>
+		
+		<tr>
+		<td>
+		Choose image
+		<label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+		
+		</td>
+		
+		<td>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+		</td>
+		</tr>
+		</table>
+       
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+
+{% endblock %}

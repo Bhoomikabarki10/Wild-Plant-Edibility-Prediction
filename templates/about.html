@@ -1,0 +1,79 @@
+{% extends "base.html" %} {% block content %}
+
+
+
+<h2>About us</h2>
+
+<div class="container-fluid bg-primary">
+<marquee>
+    <H1 style="color:white;">wild plant produce edibilty prediction</H1>
+</marquee>
+
+</div>
+
+<div class="container-fluid " id="details">
+
+    <p>
+
+    <h1>Check for different plants that can help cure Diabetes</h1>
+
+What causes Diabetes?<br/><br/>
+
+Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. <br/>Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells.
+
+Over time, having too much glucose in your blood can cause health problems. <br/><br/>Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.
+
+There are plenty of plants and herbs that have abundance of medicinal values within them, such as, neem, amla, tulsi, lavender, so on and so forth. All of them are used in different methods in order to help maintain diabetes.
+
+    <br/><br/>
+Below are the images of some plants that help in maintaining diabetes
+Below are the images of some plants that might not help in maintaining diabetes</p>
+</div>
+<style>
+img{
+width:300px;
+height:300px;
+}
+</style>
+<h3>Fallowing are curable plants</h3>
+<div class="container">
+
+<div class="row">
+    <div class="col-sm">
+     <img   src="{{url_for('static',filename='neema.jpg')}}" />
+    </div>
+    <div class="col-sm">
+    <img  src="{{url_for('static',filename='tulasi.jpg')}}"  />
+    </div>
+
+    <div class="col-sm">
+    <img    src="{{url_for('static',filename='8.jpg')}}"  />
+    </div>
+
+</div></div>
+
+
+
+
+<h3>Fallowing are Non curable plants</h3>
+<div class="container">
+
+<dic class="row">
+    <div class="col-sm">
+     <img   src="{{url_for('static',filename='e23.jpg')}}" />
+    </div>
+    <div class="col-sm">
+    <img  src="{{url_for('static',filename='e31.jpg')}}"  />
+    </div>
+
+    <div class="col-">
+    <img    src="{{url_for('static',filename='s33.jpg')}}"  />
+    </div>
+
+</div>
+
+<br/><br/>
+
+
+</div>
+{% endblock %}
